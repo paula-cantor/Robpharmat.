@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Robpharmat </title>
+
+
+   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <style>
+        /* RESET */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Merriweather', sans-serif;
+            background-color: #f2f5f7;
+            color: #333;
+            line-height: 1.7;
+        }
+
+        /* HEADER CON LOGO DE FONDO */
+        header {
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            color: #fff;
+        }
+
+        /* Imagen de fondo del header */
+        .logo-fondo {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url(IMG/4db9ec19-091f-42ba-9552-739e22f6958f.png) center/cover no-repeat; /* Aquí va tu imagen */
+            opacity: 0.40; /* Ajusta la visibilidad */
+            z-index: 1;
+        }
+
+        header h1, header p {
+            position: relative;
+            z-index: 2;
+            color: #0a0101;
+            text-shadow: 0 3px 10px rgba(0,0,0,0.1); /* sombra para que resalte */
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+
+        header p {
+            font-size: 1.5rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #44ad48;
+            flex-wrap: wrap;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+
+        nav a {
+            color: white;
+            padding: 15px 25px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #388e3c;
+            border-radius: 5px;
+        }
+
+        section {
+            padding: 70px 20px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        section h2 {
+            font-size: 2.5rem;
+            color: #2e7d32;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .card {
+            background-color: #ffffff;
+            padding: 30px;
+            margin: 30px 0;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+
+        .card img {
+            display: block;
+            margin: 20px auto;
+            max-width: 50%;
+            border-radius: 10px;
+        }
+
+        ul {
+            margin-left: 20px;
+            list-style: disc;
+        }
+
+        /* FORMULARIO */
+        .formulario input, .formulario textarea {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border: 1px solid #c8e6c9;
+            border-radius: 8px;
+        }
+
+        .formulario button {
+            background-color: #388e3c;
+            color: white;
+            padding: 15px 20px;
+            border: none;
+            cursor: pointer;
+            font-weight: 600;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .formulario button:hover {
+            background-color: #2e7d32;
+        }
+
+        #mensaje {
+            margin-top: 10px;
+            font-weight: bold;
+            color: #2e7d32;
+        }
+
+        footer {
+            background-color: #2e7d32;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media(max-width:768px){
+            header h1 { font-size: 2.5rem; }
+            header p { font-size: 1.2rem; }
+            nav { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <!-- Fondo con logo -->
+    <div class="logo-fondo"></div>
+
+    <!-- Contenido encima del logo -->
+    <h1>Robpharmat</h1>
+    <p>Dispensador Automático de Medicación</p>
+</header>
+
+<nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#proyecto">Proyecto</a>
+    <a href="#funcionamiento">Funcionamiento</a>
+    <a href="#ventajas">Ventajas</a>
+    <a href="#riesgos">Riesgos</a>
+    <a href="#sector">Sector</a>
+    <a href="#feedback">Opinión</a>
+</nav>
+
+<section id="inicio">
+    <div class="card">
+        <h2>Inicio</h2>
+<p>Bienvenido a nuestro <strong>proyecto innovador</strong> de dispensación automática de medicamentos. Descubre cómo la tecnología puede facilitar el acceso seguro a medicamentos en cualquier momento, garantizando comodidad y seguridad.  
+Nuestro sistema está diseñado pensando en <strong>farmacéuticos y pacientes</strong>, ofreciendo información clara sobre cada medicamento y permitiendo una interacción rápida y sencilla. Además, contribuye a la <strong>reducción de errores humanos</strong> y al control eficiente de stock, asegurando que los productos críticos estén siempre disponibles.</p>
+    </div>
+</section>
+
+<section id="proyecto">
+    <div class="card">
+        <h2>Proyecto</h2>
+        <p>Este dispensador funciona como un <strong>cajero automático de medicación</strong>. Permite identificación del usuario mediante métodos seguros, selección de productos de urgencia y recomendaciones según síntomas.  
+La farmacia estará ubicada en Jaén, contará con doble planta y un robot de almacenamiento automatizado. El sistema integra <strong>protocolos de seguridad, registro de dispensaciones y educación sanitaria</strong>, fomentando el uso responsable de los medicamentos.  
+Además, se prevé la implementación de <strong>información interactiva y tutoriales</strong> para guiar al usuario en el proceso de selección y uso correcto de los productos.</p>
+        <img src="IMG/55f1e813-edc6-4ba1-8e94-1b35aa1aae63.png" alt="Vista del dispensador automático">
+    </div>
+</section>
+
+<section id="funcionamiento">
+    <div class="card">
+        <h2>Funcionamiento</h2>
+        <ul>
+    <li>Identificación del usuario mediante pantalla interactiva y códigos seguros</li>
+    <li>Selección de medicamentos de venta libre y productos de urgencia con instrucciones claras</li>
+    <li>Recomendaciones personalizadas según síntomas y alertas de interacción medicamentosa</li>
+    <li>Registro de cada dispensación en la base de datos para seguridad y seguimiento</li>
+    <li>Mantenimiento periódico, actualizaciones de software y protocolos de contingencia ante fallos</li>
+    <li>Notificaciones automáticas a farmacéuticos para reabastecimiento o alertas de caducidad</li>
+</ul>
+        <!-- IMAGEN DEL FUNCIONAMIENTO -->
+        <img src="IMG/freepik_basandote-en-esa-imagen-anade-una-persona-ahi-utilizando-la-maquina-esa_0001.jpeg" alt="Usuario interactuando con dispensador">
+    </div>
+</section>
+
+<section id="ventajas">
+    <div class="card">
+        <h2>Ventajas</h2>
+        <ul>
+    <li>Acceso a medicamentos <strong>24/7</strong>, incluso fuera del horario habitual</li>
+    <li>Mayor comodidad para el personal, evitando desplazamientos innecesarios</li>
+    <li>Reducción de errores humanos mediante automatización y registro digital</li>
+    <li>Educación sanitaria y farmacovigilancia integrada en la plataforma</li>
+    <li>Innovación tecnológica que mejora la eficiencia y permite un control más preciso del inventario</li>
+    <li>Facilita la trazabilidad y transparencia en la dispensación de productos</li>
+</ul>
+    </div>
+</section>
+
+<section id="riesgos">
+    <div class="card">
+        <h3>Error en la dispensación</h3>
+<p>Verificación automática y mantenimiento rutinario, además de alertas de doble control para reducir errores.</p>
+<h3>Riesgos eléctricos</h3>
+<p>Instalación certificada, revisión periódica y protección contra sobrecargas o fallos de energía.</p>
+<h3>Interacción con la máquina</h3>
+<p>Resguardos físicos, botones de parada de emergencia y capacitación del personal para uso seguro.</p>
+<h3>Uso responsable de medicamentos</h3>
+<p>Educación sanitaria para los usuarios, control de dosis, farmacovigilancia y registro de cada dispensación.</p>
+<h3>Privacidad y seguridad de datos</h3>
+<p>Protección de la información personal de los usuarios mediante cifrado y acceso restringido a farmacéuticos.</p>
+    </div>
+</section>
+
+<section id="sector">
+    <div class="card">
+        <h2>Sector Farmacéutico</h2>
+       <p>La automatización en farmacias <strong>incrementa eficiencia y reduce errores</strong>, permitiendo la dispensación de productos sin presencia constante del farmacéutico. Esto es especialmente útil ante la creciente demanda de medicamentos fuera del horario habitual.  
+Se prevé expansión a otras ciudades y reducción de costes a medida que la tecnología evoluciona. Además, la implementación de estos sistemas facilita el seguimiento de tendencias de consumo, optimiza el inventario y permite una atención más personalizada a los pacientes.</p>
+        <!-- IMAGEN DEL SECTOR -->
+        <img src="IMG/8f6f4d2d-322d-47d9-aaf7-db6f8abe09c4.png" alt="Tecnología en farmacias y dispensación automática">
+    </div>
+</section>
+
+<section id="feedback">
+    <div class="card">
+        <h2>¿Qué opinas sobre nuestro proyecto?</h2>
+        <p>Tu opinión nos ayuda a mejorar el dispensador automático y la experiencia de la web. Déjanos tus sugerencias o comentarios:</p>
+        <form class="formulario" onsubmit="enviarFormulario(event)">
+            <input type="text" placeholder="Nombre" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Tu opinión o sugerencia" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+        <p id="mensaje"></p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Proyecto Dispensador Automático | Jaén</p>
+</footer>
+
+<script>
+function enviarFormulario(event) {
+    event.preventDefault();
+    document.getElementById("mensaje").innerText = "Mensaje enviado correctamente ✅";
+}
+</script>
+
+</body>
+</html>
